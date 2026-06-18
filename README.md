@@ -6,19 +6,8 @@
 
 ## 설정 방법
 
-- (1) `epoch.cmd`를 `PATH` 경로에 넣는다.
-- (2) `epoch_time.ps1`를 복사하고, `epoch.cmd`의 다음 코드에서 `epoch_time.ps1`의 위치를 수정한다. 
-```bat
-@echo off
-if "%~1"=="" (
-    echo "Input epoch time. (such as 1718712000)"
-    exit /b
-)
-echo %1
-@REM pwsh: old powershell 5
-@REM powershell : powershell 6 or higer version
-pwsh -ExecutionPolicy Bypass -File "C:\UTIL\epoch_time.ps1" %1
-```
+- (1) `epoch.cmd`와 `epoch_time.ps1`를 임의의 경로에 복사한다.
+- (2) 해당 경로를 `PATH` 경로에 추가한다.
 
 ## 사용 방법
 
