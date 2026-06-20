@@ -4,6 +4,7 @@ if "%~1"=="" (
     exit /b
 )
 echo %1
+
 :: pwsh: powershell 6 or higer version 
 :: powershell: old powershell 5
 :: pwsh -ExecutionPolicy Bypass -File "C:\UTIL\epoch_time.ps1" %1
